@@ -7,6 +7,8 @@
   <artifactId>sai</artifactId>
   <version>1.0-SNAPSHOT</version>
 
+  <packaging>war</packaging>
+
   <name>sai</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -41,6 +43,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version>
+        </plugin>
+
+    </plugins>
+</build>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
